@@ -1,0 +1,11 @@
+name: Handoff
+
+on:
+  workflow_dispatch:
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "Hello from the handoff workflow!"
