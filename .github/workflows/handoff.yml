@@ -1,13 +1,11 @@
 name: Handoff Workflow
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 jobs:
   greeting:
     runs-on: ubuntu-latest
     steps:
-      - name: Greet
-        run: echo "Welcome to the HeziLiu handoff demo!"
+      - name: Echo greeting
+        run: echo "Hello from the handoff demo workflow!"
